@@ -68,11 +68,11 @@ while True:
         data = json.loads(r.text)
         STATUS = data['status']
         ADSBLOCKED = data['ads_blocked_today']
-        LIFECLIENTS = DATA['clients_ever_seen']
+        LIFECLIENTS = data['clients_ever_seen']
         CLIENTS = data['unique_clients']
         DNSQUERIES = data['dns_queries_today']
         ADS = data['ads_percentage_today']
-        BLOCKED = daata['domains_being_blocked']
+        BLOCKED = data['domains_being_blocked']
     except:
       time.sleep(1)
       continue
